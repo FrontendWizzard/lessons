@@ -1,0 +1,157 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Hover effect: orange */
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.project1, .project2, .project3 {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial {
+    font-style: italic;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+}
+
+#skills li {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#skills li::before {
+    content: "⭐";
+    color: gold;
+    margin-right: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about, #projects, #skills {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+}

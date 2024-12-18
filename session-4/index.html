@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Basic table-->
+    <div>
+        <p class="captain">list of Participants</p>
+        <table>
+            <caption>Parcipants' informations</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>28</td>
+                    <td>John@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane smith</td>
+                    <td>35</td>
+                    <td>jane@gmail.com</td>
+                <tr>
+                        <td>Michael Brown</td>
+                        <td>45</td>
+                        <td>Michael@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>23</td>
+                    <td>Emily@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Chris Wilson</td>
+                    <td>39</td>
+                    <td>Chris@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Merning Cells-->
+    <div>
+        <p class="caprion">Weekly Activity Schedule</p>
+        <table>
+            <caption>Weekly Activity Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time slot</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Morning</td>
+                    <td rowspan="3">Yoga Class</td>
+                    <td colspan="3">Teem Meeting</td>
+                    <td>Work</td>
+                    <td>Shoping</td>
+                    <td>rest</td>
+                </tr>
+                <tr>
+                    <td>Afternoon</td>
+                    <td>Work</td>
+                    <td>Work</td>
+                    <td>Work</td>
+                    <td colspan="3">Family Time</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>Gym</td>
+                    <td>TV</td>
+                    <td>Read</td>
+                    <td>Gym</td>
+                    <td>Friends</td>
+                    <td>Movie</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Shoping Cart Table-->
+    <div>
+        <p class="captain">Shoping Cart</p>
+        <table>
+            <caption>Shoping Cart Details</caption>
+            <thead>
+                <tr>
+                    <th id="item">Item name</th>
+                    <th id="quantity">Quantity</th>
+                    <th id="price">Price per Item</th>
+                    <th id="total">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="item">Apple</td>
+                    <td headers="quantity">3</td>
+                    <td headers="price">1$</td>
+                    <td headers="total">3$</td>
+                </tr>
+                <tr>
+                    <td headers="item">Bread</td>
+                    <td headers="quantity">2</td>
+                    <td headers="price">2$</td>
+                    <td headers="total">4$</td>                    
+                </tr>
+                <tr>
+                    <td headers="item">Milk</td>
+                    <td headers="quantity">7</td>
+                    <td headers="price">3$</td>
+                    <td headers="total">21$</td>
+                </tr>
+                <tr>
+                    <td headers="item">Cheese</td>
+                    <td headers="quantity">1</td>
+                    <td headers="price">25$</td>
+                    <td headers="total">25$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>53$</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
